@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.example.administrator.ninegridview.customview.CircleImageView
+            android:id="@+id/img_header2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/img_header2"
+            android:layout_toRightOf="@+id/img_header2"
+            android:text="萤火之森"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/largeTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name2"
+            android:layout_toRightOf="@+id/name2"
+            android:background="@drawable/shape"
+            android:text="动漫"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/smallTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name2"
+            android:layout_toRightOf="@+id/img_header2"
+            android:text="宫崎骏" />
+
+        <TextView
+            android:id="@+id/tv_X_item2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="X"
+            android:textColor="#968686" />
+    </RelativeLayout>
+
+    <com.example.administrator.ninegridview.customview.ExpandableTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="相思 \n王维\n红豆生南国，\n春来发几枝。\n愿君多采撷，\n此物最相思。" />
+
+        <TextView
+            android:id="@+id/text_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:text="全文" />
+
+    </com.example.administrator.ninegridview.customview.ExpandableTextView>
+
+
+    <com.example.administrator.ninegridview.customview.SpecialArticle
+        android:id="@+id/specialArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#b3afaf"></com.example.administrator.ninegridview.customview.SpecialArticle>
+
+    <include layout="@layout/share" />
+</LinearLayout>

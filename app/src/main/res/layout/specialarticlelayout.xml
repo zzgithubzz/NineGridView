@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/image_specialArticle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/text_specialArticle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/image_specialArticle"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/image_specialArticle"
+        android:gravity="center_vertical"
+        android:maxLines="2" />
+</merge>
