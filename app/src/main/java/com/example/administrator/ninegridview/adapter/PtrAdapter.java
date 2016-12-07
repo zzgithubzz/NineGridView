@@ -174,7 +174,7 @@ public class PtrAdapter extends BaseAdapter {
         viewHolder.content.setText(list.get(position).getContent());
 
 
-        Picasso.with(context).load(list.get(position).getUserImage()).into(viewHolder.imgHeader);
+        Picasso.with(context).load(list.get(position).getUserImage()).placeholder(R.mipmap.ic_launcher).into(viewHolder.imgHeader);
 
 
         switch (getItemViewType(position)) {

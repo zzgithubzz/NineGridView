@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.example.administrator.ninegridview.adapter.PtrAdapter;
 import com.example.administrator.ninegridview.bean.InfoBean;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.lzy.ninegrid.ImageInfo;
 
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ptrListView = ((PullToRefreshListView) findViewById(R.id.ptr_listview));
+
+        ptrListView.setMode(PullToRefreshBase.Mode.BOTH);
 
         View view = LayoutInflater.from(this).inflate(R.layout.list_empty, null, false);
         ptrListView.setEmptyView(view);

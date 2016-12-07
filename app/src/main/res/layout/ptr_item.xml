@@ -67,7 +67,7 @@
             android:id="@+id/text_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="相思 \n王维\n红豆生南国，\n春来发几枝。\n愿君多采撷，\n此物最相思。" />
+            android:text="相思" />
 
         <TextView
             android:id="@+id/text_open"
